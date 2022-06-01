@@ -1,22 +1,20 @@
 /*aqui comienza mi index*/
-*{
-    margin: 0%;
-    box-sizing: border-box;
-}
+
  .ulo {
     background-color: bisque;
-    border:solid 5px black;
+    border:solid 2px black;
     box-sizing: border-box;
     text-align: center;
-    grid-area: tit;
 }
 
 .lista{   
     background-color: beige;    
     width: 100%;
-    display: inline;
     margin: 30px;
-    grid-area: lis;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .lista-item{
@@ -34,62 +32,38 @@
 }
 
 main{
-    height: 70vh;
-    margin-top: 30px;
+    padding: 2rem;
+    
 }
 
-.contenedor img {
-    width: 500px;
-    position: relative;
-    grid-area: fot;
+.contenedores{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    
 }
-
-.contenedor p{
-    color:black;
-    box-sizing: border-box;
-    width: 40%;
-    padding-right: 70px;
-    position: relative;
-    left: 20px;
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
-    grid-area: par;
-}
-
 .contenedor{
-    margin: 15px;
     display: flex;
-    background-color: beige;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+   
 }
-.contenedor2{ 
-    margin: 15px;
-    display: flex;
-    background-color: beige;
-    flex-wrap: wrap;
-}
-.contenedor2 img {
+
+.contenedor__imge {
     width: 500px;
-    position: relative;
-    grid-area: foot;
+    flex-wrap: wrap;
 }
-.contenedor2 p{
+.contenedor__par{
     color:black;
-    box-sizing: border-box;
     width: 40%;
-    padding-right: 70px;
-    position: relative;
-    left: 20px;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
-    grid-area: paar;
 }
+
 .futer{
     bottom:0;
     width:100%;
     height:60px;   
     margin-top: 20px;
-    grid-area: fut;
     flex-wrap: wrap;
 }
 .insta{
@@ -106,16 +80,7 @@ main{
 
   /*aqui comienzo la grids*/
 
-  #grilla{
-   display: grid;
-  grid-template-areas:
-  "lis tit tit"
-  "lis fot par"
-  "lis foot paar"
-  "fut fut fut";
-  grid-template-columns: 200px auto;
-  grid-template-rows: auto ;
-}
+  
 
 
     /*aqui termina el index*/
