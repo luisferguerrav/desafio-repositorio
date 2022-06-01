@@ -1,22 +1,24 @@
 /*aqui comienza mi index*/
-*{
-    margin: 0%;
-    box-sizing: border-box;
-}
+body{
+    background-image: linear-gradient( white, beige, bisque, blanchedalmond, beige, white );
+    }
+
+
  .ulo {
     background-color: bisque;
-    border:solid 5px black;
+    border:solid 2px black;
     box-sizing: border-box;
     text-align: center;
-    grid-area: tit;
 }
 
-.lista{   
-    background-color: beige;    
+.lista{       
     width: 100%;
-    display: inline;
     margin: 30px;
-    grid-area: lis;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .lista-item{
@@ -30,92 +32,73 @@
     color: #000;
     font-size: 18px;
     background-color:bisque;
-     padding: 8px;
+    padding: 8px;
+    transition: background 1s;
+}
+.lista-item :hover{
+background: pink;
+
 }
 
 main{
-    height: 70vh;
-    margin-top: 30px;
+    padding: 2rem;
+    
 }
-
-.contenedor img {
-    width: 500px;
-    position: relative;
-    grid-area: fot;
+/*aqui comienzo la grids*/
+.contenedores{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-delay: 10s;
+   
+   
+    
 }
-
-.contenedor p{
-    color:black;
-    box-sizing: border-box;
-    width: 40%;
-    padding-right: 70px;
-    position: relative;
-    left: 20px;
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
-    grid-area: par;
-}
-
 .contenedor{
-    margin: 15px;
     display: flex;
-    background-color: beige;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+   
 }
-.contenedor2{ 
-    margin: 15px;
-    display: flex;
-    background-color: beige;
-    flex-wrap: wrap;
-}
-.contenedor2 img {
+
+.contenedor__imge {
     width: 500px;
-    position: relative;
-    grid-area: foot;
+    flex-wrap: wrap;
 }
-.contenedor2 p{
+.contenedor__par{
     color:black;
-    box-sizing: border-box;
     width: 40%;
-    padding-right: 70px;
-    position: relative;
-    left: 20px;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
-    grid-area: paar;
 }
+
 .futer{
     bottom:0;
     width:100%;
     height:60px;   
     margin-top: 20px;
-    grid-area: fut;
     flex-wrap: wrap;
+    justify-content: left;
 }
 .insta{
     width: 50px;
     height: 50px;
+   
 }
 .tuite{
     width: 50px;
     height: 50px;
+
 }  
-.fondito{
-    background-color: beige;
-}
 
-  /*aqui comienzo la grids*/
+  @keyframes aparecer{
+      0%{ opacity: 0;}
+      50%{ opacity: 0.5;}
+      100%{ opacity: 100%;}
+  }
 
-  #grilla{
-   display: grid;
-  grid-template-areas:
-  "lis tit tit"
-  "lis fot par"
-  "lis foot paar"
-  "fut fut fut";
-  grid-template-columns: 200px auto;
-  grid-template-rows: auto ;
-}
+  
 
 
     /*aqui termina el index*/
@@ -293,59 +276,61 @@ main{
         left: 92%;
     }
     /*mis media queris*/ 
-    @media screen and (max-width: 320px) {
-        .lista-item{
-            display: inline-block;
-        }
-        .contenedor{
-            display: flex;
-        }
-        .futer{
-            display: none;
-            
-        }
-        
-        #grilla{
-            grid-template-columns: auto;
-            grid-template-areas: 
-            "tit"
-            "lis"
-            "fot"
-            "par"
-            "foot"
-            "paar"
-            "fut"
-            ;
-        }
-        
+    @media screen and (max-width: 320px){
+       .lista{
+        display: flex;
+        flex-direction: row;
     }
+    .lista-item{
 
-    @media screen and (max-width: 768px) {
-        .lista-item{
-            display: inline-block;
-        }
-        .contenedor{
-            display: flex;
-        }
-        .futer{
-            display: none;
-            
-        }
-        
-        #grilla{
-            grid-template-columns: auto;
-            grid-template-areas: 
-            "tit"
-            "lis"
-            "fot"
-            "par"
-            "foot"
-            "paar"
-            "fut"
-            ;
-        }
-        
+        padding: 2.5px;
+        margin: 5px;
+        text-decoration: none;
+        color: #000;
     }
+    .lista-item a{
+        text-decoration: none;   
+        color: #000;
+        font-size: 18px;
+        background-color:bisque;
+        
+        
+        }
+    
+    .contenedores{
+            display: grid;
+            grid-template-columns:repeat(1, 1fr);
+             
+        }
+        }
+        @media screen and (max-width: 768px){
+            .lista{
+             display: flex;
+             flex-direction: row;
+         }
+         .lista-item{
+     
+             padding: 2.5px;
+             margin: 5px;
+             text-decoration: none;
+             color: #000;
+         }
+         .lista-item a{
+             text-decoration: none;   
+             color: #000;
+             font-size: 18px;
+             background-color:bisque;
+             
+             
+             }
+         
+         .contenedores{
+                 display: grid;
+                 grid-template-columns:repeat(1, 1fr);
+                  
+             }
+             }
+            
    @media screen and (max-width: 320px) {
         .futer2{
             display: flex; flex-direction: row;
