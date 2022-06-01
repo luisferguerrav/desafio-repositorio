@@ -104,6 +104,12 @@ main{
     /*aqui termina el index*/
 
     /*aqui comienza todo lo de la base*/
+
+    /*todos los body de la base*/
+    .fondito{
+        background-image: linear-gradient( white, beige, bisque, blanchedalmond, beige, white );
+    }
+    
     .futer2{ /*todos los footer de la base*/
         display: flex; flex-direction: row;
         justify-content: space-around;
@@ -116,24 +122,28 @@ main{
     }
     /*estadisticas*/
     .titu{
-        position: relative;
-        left: 25%;
-    }
     
-    h2{
-        padding: 10px;
-        position: relative;
-        left: 20%; 
-        background-color: bisque;
-        margin-right: 70%;
+        
     }
-    
+
+    .stats{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
     .list{
-        margin-left: 50px;
-        margin-right: 200px;
-        background-color: beige;
-    
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    color: #000;
+   
     }
+    .list__gol{
+    text-decoration: none;   
+    color: #000;
+    font-size: 18px;
+    padding: 8px;
+}
+
     /*tablas*/
     .tablas{
         background-color: beige;
@@ -188,67 +198,59 @@ main{
 
 
     /*noticias*/
-    .noti1 h1{
-        border: solid 5px black;
+    nav{
+        padding: 5rem;
+    }
+    .noticias{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+       
+
+    }
+    .noticias__tit{
+        padding: 1rem;
+        margin: 1rem;
         box-sizing: border-box;
-        width: 50%;
-        text-align: center;
-        background-color: bisque;
+        border: solid 2px black;
+
+    }
+    .noti1{
+        padding: 1rem;
+        justify-content: space-between;
     }
     
     .noti1 img{
-        width: 30%;
-        height: 30%;
+       width: 100%;
+        flex-wrap: wrap;
     }
     
     .noti1 iframe{
-       width: 30%;
-       height: 30%
+        width: 100%;
+        flex-wrap: wrap;
+        padding-top: 1rem;
     }
     
-    .noti1{
-        margin-left: 25%;
+    .noti2 {
+        justify-content: space-between;
+        padding: 1rem;
     }
     
-    .fondito{
-        background-color: beige;
-    }
-    
-    .noti2 h1 {
-        border: solid 5px black;
-        box-sizing: border-box;
-        width: 40%;
-        text-align: center;
-        margin-right: 200px;
-        background-color: bisque;
-    }
-    
-    .noti2{
-        display: block
-    }
-    
-    .noti3 h1{
-        border: solid 5px black;
-        box-sizing: border-box;
-        width: 60%;
-        text-align: center;
-        position: relative;
-        left: 60%;
-        background-color: bisque;
-    }
-    
-    .noti3 img{
-        position: relative;
-        left: 60%;
+    .noti2 img{
+        width: 100%;
+        flex-wrap: wrap;
     }
     
     .noti3{
-        display: inline
+        justify-content: space-between;
+        padding: 1rem;
     }
     
-    .alinear{
-        display: flex
+    .noti3 img{
+        width: 100%;
+        flex-wrap: wrap;
     }
+    
     /*contacto*/
     .formu h1 {
         border: solid 5px black;
