@@ -35,7 +35,7 @@ main{
     padding: 2rem;
     
 }
-
+/*aqui comienzo la grids*/
 .contenedores{
     display: grid;
     grid-template-columns:repeat(2, 1fr);
@@ -78,7 +78,7 @@ main{
     background-color: beige;
 }
 
-  /*aqui comienzo la grids*/
+  
 
   
 
@@ -258,59 +258,61 @@ main{
         left: 92%;
     }
     /*mis media queris*/ 
-    @media screen and (max-width: 320px) {
-        .lista-item{
-            display: inline-block;
-        }
-        .contenedor{
-            display: flex;
-        }
-        .futer{
-            display: none;
-            
-        }
-        
-        #grilla{
-            grid-template-columns: auto;
-            grid-template-areas: 
-            "tit"
-            "lis"
-            "fot"
-            "par"
-            "foot"
-            "paar"
-            "fut"
-            ;
-        }
-        
+    @media screen and (max-width: 320px){
+       .lista{
+        display: flex;
+        flex-direction: row;
     }
+    .lista-item{
 
-    @media screen and (max-width: 768px) {
-        .lista-item{
-            display: inline-block;
-        }
-        .contenedor{
-            display: flex;
-        }
-        .futer{
-            display: none;
-            
-        }
-        
-        #grilla{
-            grid-template-columns: auto;
-            grid-template-areas: 
-            "tit"
-            "lis"
-            "fot"
-            "par"
-            "foot"
-            "paar"
-            "fut"
-            ;
-        }
-        
+        padding: 2.5px;
+        margin: 5px;
+        text-decoration: none;
+        color: #000;
     }
+    .lista-item a{
+        text-decoration: none;   
+        color: #000;
+        font-size: 18px;
+        background-color:bisque;
+        
+        
+        }
+    
+    .contenedores{
+            display: grid;
+            grid-template-columns:repeat(1, 1fr);
+             
+        }
+        }
+        @media screen and (max-width: 768px){
+            .lista{
+             display: flex;
+             flex-direction: row;
+         }
+         .lista-item{
+     
+             padding: 2.5px;
+             margin: 5px;
+             text-decoration: none;
+             color: #000;
+         }
+         .lista-item a{
+             text-decoration: none;   
+             color: #000;
+             font-size: 18px;
+             background-color:bisque;
+             
+             
+             }
+         
+         .contenedores{
+                 display: grid;
+                 grid-template-columns:repeat(1, 1fr);
+                  
+             }
+             }
+            
    @media screen and (max-width: 320px) {
         .futer2{
             display: flex; flex-direction: row;
