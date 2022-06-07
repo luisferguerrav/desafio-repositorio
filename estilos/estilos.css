@@ -1,18 +1,7 @@
 /*aqui comienza mi index*/
 body{
-    background-image: linear-gradient( beige, beige, bisque, blanchedalmond, beige, white );
+    background-image: linear-gradient( white, beige, bisque, blanchedalmond, beige, white );
     }
-.png{
-        width: 200px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .ulo{
-        padding: 2.5rem;
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-
 
 .lista{       
     width: 100%;
@@ -110,17 +99,7 @@ main{
     .fondito{
         background-image: linear-gradient( white, beige, bisque, blanchedalmond, beige, white );
     }
-    
-    .futer2{ /*todos los footer de la base*/
-        display: flex; flex-direction: row;
-        justify-content: space-around;
-        box-sizing: border-box;
-        background-color: bisque;
-        padding: 10px;
-        border: solid 5px black;
-        margin: 100px;
-        flex-wrap: wrap;
-    }
+   
     /*estadisticas*/
     .titu{
     
@@ -339,6 +318,7 @@ main{
                 padding: 1px;
                 width: 200px;
             }
+        }
             @media screen and (max-width: 320px){
                 .noticias__tit{
                     display: flex;

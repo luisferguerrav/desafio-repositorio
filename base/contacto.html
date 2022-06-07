@@ -10,67 +10,91 @@
 </head>
 <body class="fondito">
     <header>
-        <div class="futer2">
-            <span><a href="../index.html"> inicio </a></span>
-        <span><a href="../base/estadisticas.html"> estadisticas</a></span>
-        <span><a href="../base/tablas.html"> tablas </a></span>
-        <span><a href="../base/noticias.html"> noticias </a> </span>
-        <span><a href="../base/contacto.html"> Conctacto </a></span>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../archivos/balon.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+                    El Mejor futbol
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav"  class="lista">
+                  <li class="nav-item" class="lista-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html"> inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../base/estadisticas.html">Estadisticas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../base/tablas.html">tablas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../base/noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../base/contacto.html">contacto</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-
-        <nav>
-            <div class="formu"> 
+    <main>
+        <div class="formu"> 
                 
-                <h1 >Queremos saber mas de ti</h1>
-                <div class="formu1">
-                <form action="" method="get" enctype="text/plain">
-                <label for="firtsname"class="form-label" >nombre </label>    
-                <input type="text" name="firtsname" class="form-control"  id="firtsname"required placeholder="dinos tu nombre">
-               <div>
-                 <label for="lastname"  class="form-label">apellido </label>
-                 <input type="text" name="lastname" class="form-control" id="lastname"required placeholder="dinos tu apellido">
+            <h1 >Queremos saber mas de ti</h1>
+            <div class="formu1">
+            <form action="" method="get" enctype="text/plain">
+            <label for="firtsname"class="form-label" >Nombre </label>    
+            <input type="text" name="firtsname" class="form-control"  id="firtsname"required placeholder="dinos tu nombre">
+           <div>
+             <label for="lastname"  class="form-label">Apellido </label>
+             <input type="text" name="lastname" class="form-control" id="lastname"required placeholder="dinos tu apellido">
+            </div>
+            <div>
+                <label for="username"  class="form-label">Usuario</label>
+                <input type="text" name="username" class="form-control" id="username"required placeholder=" tu nombre de usuario">
+            </div>
+            <div class="form-check">
+                <div>
+                    <label for="sex"  class="form-check-label" >Dinos tu genero</label> </div>
+                    <input class="form-check-input" type="radio" name="sex" id="sex" value="hombre">Hombre
                 </div>
                 <div>
-                    <label for="username"  class="form-label">usuario</label>
-                    <input type="text" name="username" class="form-control" id="username"required placeholder=" tu nombre de usuario">
-                </div>
-                <div class="form-check">
-                    <div>
-                        <label for="sex"  class="form-check-label" >dinos tu genero</label> </div>
-                        <input class="form-check-input" type="radio" name="sex" id="sex" value="hombre">hombre
-                    </div>
-                    <div>
-                    <input class="form-check-input" type="radio" name="sex" id="sex" value="mujer">mujer
-                    </div>
-                    <div>
-                    <input class="form-check-input" type="radio" name="sex" id="sex" value="no te importa">no te importa
-                    </div>
-
-                </div>
-                <div class="mb-3">
-                    <label for="mail"  class="form-label">correo</label>
-                    <input type="email" name="mail" class="form-control" id="mail" required placeholder="ingresa tu mail">
-                <div>
-                    <label for="contra"  class="form-label">contraseña</label>
-                    <input type="password" name="contra" class="form-control" id="contra"required placeholder="contraseña">
+                <input class="form-check-input" type="radio" name="sex" id="sex" value="mujer">Mujer
                 </div>
                 <div>
-
+                <input class="form-check-input" type="radio" name="sex" id="sex" value="no te importa">No te importa
                 </div>
-               <div>
-                   <label for="texto" class="form-label">dejanos una sugerencia</label>
-                   <textarea name="texto" class="form-control" id="texto" cols="30" rows="10"></textarea>
-               </div>
-               <div>
-                   <input class="btn btn-primary" type="submit" value="enviar">
-                   <input class="btn btn-primary" type="reset" value="borrar">
-               </div>
-                </form>
-         </div></div>
-            
 
-        </nav>
+            </div>
+            <div class="mb-3">
+                <label for="mail"  class="form-label">Correo</label>
+                <input type="email" name="mail" class="form-control" id="mail" required placeholder="ingresa tu mail">
+            <div>
+                <label for="contra"  class="form-label">Contraseña</label>
+                <input type="password" name="contra" class="form-control" id="contra"required placeholder="contraseña">
+            </div>
+            <div>
+
+            </div>
+           <div>
+               <label for="texto" class="form-label">Dejanos una sugerencia</label>
+               <textarea name="texto" class="form-control" id="texto" cols="30" rows="10"></textarea>
+           </div>
+           <div>
+               <input class="btn btn-primary" type="submit" value="enviar">
+               <input class="btn btn-primary" type="reset" value="borrar">
+           </div>
+            </form>
+     </div></div>
+        
+    </main>
+
+      
     
     <hr>
     <footer class="futer" >
