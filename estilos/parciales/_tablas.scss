@@ -1,0 +1,12 @@
+.tabla{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    &__tit{
+        padding: 1rem;
+        margin: 1rem;
+        box-sizing: border-box;
+        border: solid 2px black;
+        text-align: center;
+    }
+}

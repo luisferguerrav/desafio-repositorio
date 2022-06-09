@@ -1,0 +1,17 @@
+.stats{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.list{
+padding: 5px;
+margin: 10px;
+text-decoration: none;
+color: #000;
+ 
+&__gol{
+    text-decoration: none;   
+    color: #000;
+    font-size: 18px;
+    padding: 8px;
+}
+}
