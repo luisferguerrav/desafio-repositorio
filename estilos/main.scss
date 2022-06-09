@@ -1,0 +1,336 @@
+/*aqui comienza mi index*/
+body{
+    background-image: linear-gradient( white, beige, bisque, blanchedalmond, beige, white );
+    }
+
+.lista{       
+    width: 100%;
+    padding: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+}
+
+.lista-item{
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    color: #000;
+}
+.lista-item a{
+    text-decoration: none;   
+    color: #000;
+    font-size: 18px;
+    background-color:bisque;
+    padding: 8px;
+    transition: background 1s;
+}
+.lista-item :hover{
+background: pink;
+
+}
+
+main{
+    padding: 2rem;
+    
+}
+/*aqui comienzo la grids*/
+.contenedores{
+   
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-delay: 10s;
+
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.contenedor__imge {
+    width: 500px;
+    flex-wrap: wrap;
+}
+.contenedor__par{
+    color:black;
+    width: 40%;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.futer{
+    bottom:0;
+    width:100%;
+    height:60px;   
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.insta{
+    width: 50px;
+    height: 50px;
+   
+}
+.tuite{
+    width: 50px;
+    height: 50px;
+
+}  
+
+  @keyframes aparecer{
+      0%{ opacity: 0;}
+      50%{ opacity: 0.5;}
+      100%{ opacity: 100%;}
+  }
+
+  
+
+
+    /*aqui termina el index*/
+
+    /*aqui comienza todo lo de la base*/
+
+    /*todos los body de la base*/
+    .fondito{
+        background-image: linear-gradient( white, beige, bisque, blanchedalmond, beige, white );
+    }
+   
+    /*estadisticas*/
+    .titu{
+    
+        
+    }
+
+    .stats{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .list{
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    color: #000;
+   
+    }
+    .list__gol{
+    text-decoration: none;   
+    color: #000;
+    font-size: 18px;
+    padding: 8px;
+}
+
+    /*tablas*/
+    
+.tabla{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.tabla__tit{
+    padding: 1rem;
+    margin: 1rem;
+    box-sizing: border-box;
+    border: solid 2px black;
+    text-align: center;
+    }
+  
+
+    /*noticias*/
+    nav{
+        padding: 5rem;
+    }
+    .noticias{
+        
+       
+    
+    }
+    .noticias__tit{
+        padding: 1rem;
+        margin: 1rem;
+        box-sizing: border-box;
+        border: solid 2px black;
+        flex-wrap: wrap;
+    
+    }
+    .noti1{
+        padding: 1rem;
+        justify-content: space-between;
+    }
+    
+    .noti1 img{
+       width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .noti1 iframe{
+        width: 100%;
+        flex-wrap: wrap;
+        padding-top: 1rem;
+    }
+    
+    .noti2 {
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    
+    .noti2 img{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .noti3{
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    
+    .noti3 img{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    /*contacto*/
+    .formu h1 {
+        display: flex;
+        flex-wrap: wrap;
+        border: solid 5px black;
+        box-sizing: border-box;
+        background-color: bisque;
+        text-align: center;
+        width: 500px;
+    }
+
+    .formu1{
+        box-sizing: border-box;
+        margin-left: 20px;
+    }
+
+      .insta{
+        width: 50px;
+        height: 50px;
+      }
+    
+      .tuite{
+        width: 50px;
+        height: 50px;
+        
+    }
+    /*mis media queris*/ 
+    @media screen and (max-width: 320px){
+       .lista{
+        display: flex;
+        flex-direction: row;
+    }
+    .lista-item{
+
+        padding: 2.5px;
+        margin: 5px;
+        text-decoration: none;
+        color: #000;
+    }
+    .lista-item a{
+        text-decoration: none;   
+        color: #000;
+        font-size: 18px;
+        background-color:bisque;
+        
+        }
+    
+    .contenedores{
+            display: grid;
+            grid-template-columns:repeat(1, 1fr);
+             
+        }
+        }
+        @media screen and (max-width: 768px){
+            .lista{
+             display: flex;
+             flex-direction: row;
+         }
+         .lista-item{
+     
+             padding: 2.5px;
+             margin: 5px;
+             text-decoration: none;
+             color: #000;
+         }
+         .lista-item a{
+             text-decoration: none;   
+             color: #000;
+             font-size: 18px;
+             background-color:bisque;
+             
+             
+             }
+         
+         .contenedores{
+                 display: grid;
+                 grid-template-columns:repeat(1, 1fr);
+                  
+             }
+             }
+            /*tablas*/
+   @media screen and (max-width: 320px) {
+        .futer2{
+            display: flex; flex-direction: row;
+            justify-content: space-around;
+            box-sizing: border-box;
+            background-color: bisque;
+            padding: 5px;
+            border: solid 1px black;
+            margin: 10px;
+            flex-wrap: wrap;
+        }
+        .tabla{
+            display: grid;
+            grid-template-columns: 1fr;
+          
+        }
+        
+    }
+    @media screen and (max-width: 768px) {
+        .futer2{
+            display: flex; flex-direction: row;
+            justify-content: space-around;
+            box-sizing: border-box;
+            background-color: bisque;
+            padding: 5px;
+            border: solid 1px black;
+            margin: 10px;
+            flex-wrap: wrap;
+
+
+        }
+        #grillat{ 
+            grid-template-columns: repeat(4, 1fr);
+            align-content: space-between;
+        }
+        }
+        @media screen and (max-width: 320px){
+            .formu h1{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 1px;
+                width: 200px;
+            }
+        }
+            @media screen and (max-width: 320px){
+                .noticias__tit{
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 1px;
+                    width: 200px;
+                }
+            }
+            @media screen and (max-width: 320px){
+                .stats{
+                    display: grid;
+                    grid-template-columns: 1fr;
+            }
+
+        }
