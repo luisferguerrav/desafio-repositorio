@@ -1,6 +1,10 @@
 body{
     background-image: linear-gradient( white, beige, bisque, blanchedalmond, beige, white );
     }
+    header{
+        padding: 2rem;
+        
+    }
 
 main{
     padding: 2rem;
@@ -81,3 +85,14 @@ background: pink;
     
 }
 
+@media screen and ( max-width: 360px) {
+  
+.contenedor__imge{
+    width: 200px;
+}
+  .contenedor__par{
+    padding: 5px;
+    font-size: 10px;
+    
+  }
+  }

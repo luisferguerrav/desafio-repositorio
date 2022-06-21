@@ -1,3 +1,12 @@
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(beige), color-stop(bisque), color-stop(blanchedalmond), color-stop(beige), to(white));
+  background-image: linear-gradient(white, beige, bisque, blanchedalmond, beige, white);
+}
+
+header {
+  padding: 2rem;
+}
+
 main {
   padding: 2rem;
 }
@@ -52,7 +61,7 @@ main {
       flex-wrap: wrap;
 }
 
-.lista-item {
+.lista-item, .lista-item --aceptar {
   padding: 5px;
   margin: 10px;
   text-decoration: none;
@@ -73,14 +82,43 @@ main {
   background: pink;
 }
 
+.lista-item --aceptar {
+  background-color: pink;
+}
+
+.insta {
+  width: 50px;
+  height: 50px;
+}
+
+.tuite {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 360px) {
+  .contenedor__imge {
+    width: 200px;
+  }
+  .contenedor__par {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+
 /*contacto*/
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(beige), color-stop(bisque), color-stop(blanchedalmond), color-stop(beige), to(white));
+  background-image: linear-gradient(white, beige, bisque, blanchedalmond, beige, white);
+}
+
 .formu h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: solid 5px black;
+  border: solid 2px black;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: bisque;
@@ -104,10 +142,34 @@ main {
   height: 50px;
 }
 
+@media screen and (max-width: 360px) {
+  .formu h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-text-size-adjust: 10px;
+       -moz-text-size-adjust: 10px;
+        -ms-text-size-adjust: 10px;
+            text-size-adjust: 10px;
+    width: 200px;
+  }
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(beige), color-stop(bisque), color-stop(blanchedalmond), color-stop(beige), to(white));
+  background-image: linear-gradient(white, beige, bisque, blanchedalmond, beige, white);
+}
+
+.titu {
+  padding: 2rem;
+}
+
 .stats {
   display: -ms-grid;
   display: grid;
-
+  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
 
@@ -123,6 +185,36 @@ main {
   color: #000;
   font-size: 18px;
   padding: 8px;
+}
+
+.ali {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (max-width: 360px) {
+  .stats {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(beige), color-stop(bisque), color-stop(blanchedalmond), color-stop(beige), to(white));
+  background-image: linear-gradient(white, beige, bisque, blanchedalmond, beige, white);
 }
 
 /*noticias*/
@@ -169,7 +261,8 @@ nav {
 
 .noti2 img {
   width: 100%;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .noti3 {
@@ -185,18 +278,40 @@ nav {
       flex-wrap: wrap;
 }
 
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(beige), color-stop(bisque), color-stop(blanchedalmond), color-stop(beige), to(white));
+  background-image: linear-gradient(white, beige, bisque, blanchedalmond, beige, white);
+}
+
 .tabla {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
 }
 
-.tabla__tit {
-  padding: 1rem;
-  margin: 1rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 2px black;
+.ali {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (max-width: 360px) {
+  .tabla {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 /*# sourceMappingURL=main.css.map */

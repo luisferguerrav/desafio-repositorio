@@ -6,11 +6,26 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     
-    &__tit{
-        padding: 1rem;
-        margin: 1rem;
-        box-sizing: border-box;
-        border: solid 2px black;
-        text-align: center;
-    }
+    
 }
+.ali{
+    display:flex;
+    align-content: space-between;
+    text-align: center;
+        padding: 2rem;
+        margin: 2rem;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+
+}
+
+@media screen and ( max-width: 360px) {
+  
+   .tabla{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   }
+  
+  }

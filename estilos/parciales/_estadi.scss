@@ -1,9 +1,18 @@
 body{
     background-image: linear-gradient( white, beige, bisque, blanchedalmond, beige, white );
     }
+    .titu{
+        padding: 2rem;
+    }
+.stats{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
 
 $list:(
-pad: 5px
+pad: 5px,
 marn: 10px,
 testo: none,
 color: #000,   
@@ -24,28 +33,29 @@ $gol:(
 }
 .list__gol{
     text-decoration: map-get($map: $gol, $key: testo );
-    color: map-get($map: $color, $key:color );
+    color: map-get($map: $gol, $key:color );
     font-size: map-get($map: $gol, $key: fon );
     padding: map-get($map: $gol, $key:pad );
 
 }
+.ali{
+    display:flex;
+    align-content: space-between;
+    text-align: center;
+        padding: 2rem;
+        margin: 2rem;
+}
+.logo{
+    width: 60px;
+    height: 60px;
 
+}
 
-
-.stats{
+@media screen and ( max-width: 360px) {
+  
+  .stats{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-.list{
-padding: 5px;
-margin: 10px;
-text-decoration: none;
-color: #000;
- 
-&__gol{
-    text-decoration: none;   
-    color: #000;
-    font-size: 18px;
-    padding: 8px;
-}
-}
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  }
