@@ -2,7 +2,7 @@ body{
     background-image: linear-gradient( white, beige, bisque, blanchedalmond, beige, white );
     }
     header{
-        padding: 2rem;
+padding: 2rem;
         
     }
 
@@ -70,19 +70,25 @@ background: pink;
     @extend .lista-item;
     background-color: pink;
 }
-
-@mixin tamaño {
-    width: 50px;
-    height: 50px;
+.futer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: blanchedalmond;
+    padding: 2rem;
     
+    
+
+    &-texto{
+        text-align: center;
+
 }
-.insta{
-   @include tamaño()
-  }
 
+  }
   .tuite{
-   @include tamaño()
-    
+  }
+.insta{
+margin-left: 170px;
 }
 
 @media screen and ( max-width: 360px) {
@@ -93,6 +99,18 @@ background: pink;
   .contenedor__par{
     padding: 5px;
     font-size: 10px;
-    
   }
+
+  .insta{
+    margin-right: 100px;
+
   }
+.tuite{
+    margin-left: 100px;
+    margin-bottom: 100px;
+    flex-wrap: nowrap;
+
+}
+  }
+
+  
