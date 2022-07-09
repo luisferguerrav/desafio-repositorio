@@ -29,3 +29,11 @@ body{
    }
   
   }
+  @media screen and ( max-width: 450px) {
+  
+    .tabla{
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+    }
+   
+   }

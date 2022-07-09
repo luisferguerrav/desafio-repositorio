@@ -113,4 +113,26 @@ margin-left: 170px;
 }
   }
 
+  @media screen and ( max-width: 450px) {
   
+    .contenedor__imge{
+        width: 200px;
+    }
+      .contenedor__par{
+        padding: 5px;
+        font-size: 10px;
+      }
+    
+      .insta{
+        margin-right: 100px;
+    
+      }
+    .tuite{
+        margin-left: 100px;
+        margin-bottom: 100px;
+        flex-wrap: nowrap;
+    
+    }
+      }
+    
+      

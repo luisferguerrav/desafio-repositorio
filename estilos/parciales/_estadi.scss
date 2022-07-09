@@ -59,3 +59,12 @@ $gol:(
   }
   
   }
+  @media screen and ( max-width: 4500px) {
+  
+    .stats{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    
+    }
+  
