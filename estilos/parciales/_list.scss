@@ -20,6 +20,7 @@ main{
 }
 .contenedor{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
    
@@ -29,11 +30,14 @@ main{
     width: 500px;
     flex-wrap: wrap;
 }
+
+
 .contenedor__par{
     color:black;
-    width: 40%;
+   width: 40%;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 .lista{       
     width: 100%;

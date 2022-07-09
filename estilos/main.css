@@ -24,6 +24,8 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -126,6 +128,25 @@ main {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .contenedor__imge {
+    width: 200px;
+  }
+  .contenedor__par {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .insta {
+    margin-right: 100px;
+  }
+  .tuite {
+    margin-left: 100px;
+    margin-bottom: 100px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 /*contacto*/
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(beige), color-stop(bisque), color-stop(blanchedalmond), color-stop(beige), to(white));
@@ -155,7 +176,6 @@ body {
 .insta {
   width: 50px;
   height: 50px;
-  image-orientation: center;
 }
 
 .tuite {
@@ -164,6 +184,21 @@ body {
 }
 
 @media screen and (max-width: 360px) {
+  .formu h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-text-size-adjust: 10px;
+       -moz-text-size-adjust: 10px;
+        -ms-text-size-adjust: 10px;
+            text-size-adjust: 10px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 450px) {
   .formu h1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -225,6 +260,15 @@ body {
 }
 
 @media screen and (max-width: 360px) {
+  .stats {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
   .stats {
     display: -ms-grid;
     display: grid;
@@ -299,6 +343,11 @@ nav {
       flex-wrap: wrap;
 }
 
+.ten {
+  font-size: 30px;
+  padding: 1rem;
+}
+
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(beige), color-stop(bisque), color-stop(blanchedalmond), color-stop(beige), to(white));
   background-image: linear-gradient(white, beige, bisque, blanchedalmond, beige, white);
@@ -328,6 +377,15 @@ body {
 }
 
 @media screen and (max-width: 360px) {
+  .tabla {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
   .tabla {
     display: -ms-grid;
     display: grid;
